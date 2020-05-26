@@ -7,12 +7,8 @@ namespace SimuladoMurex.Domain.Entities
     public class Mo
     {
         public int MoId { get; set; }
-        public int TypologyId { get; set; }
-        public Typology Typology { get; set; }
         public DateTime TradeDate { get; set; }
-        public string Counterparty { get; set; }
-        
-
+        public string Counterparty { get; set; }     
 
         public Ir Ir { get; set; }
 
@@ -21,5 +17,8 @@ namespace SimuladoMurex.Domain.Entities
         public Eq Eq { get; set; }
 
         public Cm Cm { get; set; }
+
+        public Typology Typology { get; set; }
+
     }
 }

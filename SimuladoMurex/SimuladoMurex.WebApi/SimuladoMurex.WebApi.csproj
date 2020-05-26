@@ -15,7 +15,6 @@
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.3" />
     <PackageReference Include="MySql.Data" Version="8.0.20" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.13" />
-    <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.19" />
   </ItemGroup>
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
@@ -24,7 +23,24 @@
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="ClientApp\model\user.ts" />
+    <None Remove="ClientApp\src\app\model\mo.ts" />
+    <None Remove="ClientApp\src\app\mo\mo.component.ts" />
+    <None Remove="ClientApp\src\app\services\mo\mo.service.ts" />
+    <None Remove="ClientApp\src\app\user\login\login.component.ts" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\SimuladoMurex.Infra.Data\SimuladoMurex.Infra.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\model\user.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\model\mo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\mo\mo.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\mo\mo.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\user\login\login.component.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\user\register\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->

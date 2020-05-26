@@ -18,6 +18,7 @@ namespace SimuladoMurex.Infra.Data.Mappings
             builder
                 .Property(i => i.TypologyName)
                 .HasColumnType("Varchar (20)");
+
         }
     }
 }

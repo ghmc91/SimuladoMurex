@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace SimuladoMurex.Domain.Interfaces.Repositories
 {
-    public interface IMoRepository<TEntity> where TEntity : class
+    public interface IMoRepository
     {
-        IEnumerable<TEntity> GetAll();
+        IEnumerable GetAll();
     }
 }
