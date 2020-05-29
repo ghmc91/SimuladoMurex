@@ -9,4 +9,7 @@ D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.Data\bin\Debug\netcoreapp3.0\
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.Data\obj\Debug\netcoreapp3.0\SimuladoMurex.Infra.Data.csproj.CopyComplete
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.Data\obj\Debug\netcoreapp3.0\SimuladoMurex.Infra.Data.dll
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.Data\obj\Debug\netcoreapp3.0\SimuladoMurex.Infra.Data.pdb
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.Data\bin\Debug\netcoreapp3.0\SimuladoMurex.Infra.Data.runtimeconfig.json
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.Data\bin\Debug\netcoreapp3.0\SimuladoMurex.Infra.Data.runtimeconfig.dev.json
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.Data\obj\Debug\netcoreapp3.0\SimuladoMurex.Infra.Data.csproj.CoreCompileInputs.cache
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.Data\obj\Debug\netcoreapp3.0\SimuladoMurex.Infra.Data.genruntimeconfig.cache

@@ -11,7 +11,7 @@ export class MoService implements OnInit {
   private _baseUrl: string;
   public mos: Mo[];
 
-  constructor(private http: HttpClient, @Injectable('BASE_URL') baseUrl: string) {
+  constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     this._baseUrl = baseUrl;
   }
 

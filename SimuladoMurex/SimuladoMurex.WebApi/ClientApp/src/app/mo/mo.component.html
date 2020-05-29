@@ -1,10 +1,23 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+<div class="section=container">
+  <h2>Mo's</h2>
 
-</body>
-</html>
+  <table class="table table-inverse table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>MoId</th>
+        <th>TradeDate</th>
+        <th>Counterparty</th>
+        <th>Typology</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mo of mos">
+        <td>{{ mo.moId }}</td>
+        <td>{{ mo.tradeDate }}</td>
+        <td>{{ mo.counterparty }}</td>
+        <td>{{ mo.typology }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
