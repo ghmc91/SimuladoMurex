@@ -25,18 +25,17 @@
   <ItemGroup>
     <None Remove="ClientApp\model\user.ts" />
     <None Remove="ClientApp\src\app\model\mo.ts" />
-    <None Remove="ClientApp\src\app\mo\mo.component.ts" />
-    <None Remove="ClientApp\src\app\services\mo\mo.service.ts" />
+    <None Remove="ClientApp\src\app\operations\operations.service.ts" />
     <None Remove="ClientApp\src\app\user\login\login.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SimuladoMurex.Infra.Data\SimuladoMurex.Infra.Data.csproj" />
+    <ProjectReference Include="..\SimuladoMurex.Infra.IoC\SimuladoMurex.Infra.IoC.csproj" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\model\user.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\model\mo.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\mo\mo.component.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\mo\mo.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\operations\operations\operations.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\user\login\login.component.ts" />
   </ItemGroup>
   <ItemGroup>

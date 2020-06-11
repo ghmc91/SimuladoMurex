@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimuladoMurex.Tests", "Simu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{FB00C7DE-C878-4C9B-ADB5-F8DD83DFD317}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimuladoMurex.Application", "SimuladoMurex.Application\SimuladoMurex.Application.csproj", "{C498BC34-61E6-481A-9F87-512A186CB928}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimuladoMurex.Application", "SimuladoMurex.Application\SimuladoMurex.Application.csproj", "{C498BC34-61E6-481A-9F87-512A186CB928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimuladoMurex.Infra.IoC", "SimuladoMurex.Infra.IoC\SimuladoMurex.Infra.IoC.csproj", "{E1FDF2DD-A97D-4453-AED3-B532145204F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{C498BC34-61E6-481A-9F87-512A186CB928}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C498BC34-61E6-481A-9F87-512A186CB928}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C498BC34-61E6-481A-9F87-512A186CB928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1FDF2DD-A97D-4453-AED3-B532145204F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1FDF2DD-A97D-4453-AED3-B532145204F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1FDF2DD-A97D-4453-AED3-B532145204F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1FDF2DD-A97D-4453-AED3-B532145204F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{AA26EC95-2E5A-4218-8A5F-03150D2726D6} = {85075376-33CD-49AE-9A25-BCF32539091A}
 		{C1DCE32C-51AC-4F6C-8DA1-022391448A2C} = {8CA1E892-B068-4937-9971-03A45961FF02}
 		{C498BC34-61E6-481A-9F87-512A186CB928} = {FB00C7DE-C878-4C9B-ADB5-F8DD83DFD317}
+		{E1FDF2DD-A97D-4453-AED3-B532145204F2} = {4E0ABA4C-ACD4-4F4F-ACEA-E7510D8456FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8ECA29F4-66D2-4F66-801A-F80764CEB20E}

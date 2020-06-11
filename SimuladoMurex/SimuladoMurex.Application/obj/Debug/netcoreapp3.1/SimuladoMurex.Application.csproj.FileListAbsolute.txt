@@ -1,0 +1,12 @@
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\bin\Debug\netcoreapp3.1\SimuladoMurex.Application.deps.json
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\bin\Debug\netcoreapp3.1\SimuladoMurex.Application.dll
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\bin\Debug\netcoreapp3.1\SimuladoMurex.Application.pdb
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\bin\Debug\netcoreapp3.1\SimuladoMurex.Domain.dll
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\bin\Debug\netcoreapp3.1\SimuladoMurex.Domain.pdb
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\obj\Debug\netcoreapp3.1\SimuladoMurex.Application.csprojAssemblyReference.cache
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\obj\Debug\netcoreapp3.1\SimuladoMurex.Application.csproj.CoreCompileInputs.cache
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\obj\Debug\netcoreapp3.1\SimuladoMurex.Application.AssemblyInfoInputs.cache
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\obj\Debug\netcoreapp3.1\SimuladoMurex.Application.AssemblyInfo.cs
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\obj\Debug\netcoreapp3.1\SimuladoMurex.Application.csproj.CopyComplete
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\obj\Debug\netcoreapp3.1\SimuladoMurex.Application.dll
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Application\obj\Debug\netcoreapp3.1\SimuladoMurex.Application.pdb

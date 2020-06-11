@@ -13,7 +13,14 @@ namespace SimuladoMurex.Infra.Data.Mappings
         {
             builder
                 .ToTable("Eq")
-                .HasKey(i => i.Mo);
+                .HasKey(i => i.MoId);
+
+
+            builder
+                .HasOne(m => m.Mo)
+                .WithOne(c => c.Eq)
+                .HasForeignKey<Mo>(m => m.MoId)
+                .IsRequired();
         }
     }
 }

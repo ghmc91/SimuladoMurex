@@ -8,6 +8,7 @@ namespace SimuladoMurex.Domain.Interfaces.Repositories
 {
     public interface IMoRepository
     {
-        public IEnumerable<Expression<Func<Mo, bool>>> Get(IEnumerable<Expression<Func<Mo, object>>> Include);
+        public IEnumerable<Mo> Get(Expression<Func<Mo, bool>> predicate); 
+        public IEnumerable<Mo> Get(Expression<Func<Mo, bool>> predicate, Expression<Func<Mo, object>> include);
     }
 }

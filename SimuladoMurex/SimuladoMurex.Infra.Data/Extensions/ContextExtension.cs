@@ -16,7 +16,7 @@ namespace SimuladoMurex.Infra.Data.Extensions
                                      .GetTypes()
                                      .Where(x => x.Namespace == "SimuladoMurex.Infra.Data.Mappings"
                                               && x.IsClass
-                                              && x.IsSealed).ToArray();
+                                              && !x.IsSealed).ToArray();
 
             foreach (var t in typesToMap)
             {

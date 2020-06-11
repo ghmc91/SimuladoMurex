@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "SimuladoMurex.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/SimuladoMurex.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SimuladoMurex.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SimuladoMurex.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SimuladoMurex.Domain/SimuladoMurex.Domain.csproj",
+      "msbuildProject": "../SimuladoMurex.Domain/SimuladoMurex.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "SimuladoMurex.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Asus\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\SimuladoMurex\\SimuladoMurex\\SimuladoMurex.Domain\\SimuladoMurex.Domain.csproj": {
+              "projectPath": "D:\\SimuladoMurex\\SimuladoMurex\\SimuladoMurex.Domain\\SimuladoMurex.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

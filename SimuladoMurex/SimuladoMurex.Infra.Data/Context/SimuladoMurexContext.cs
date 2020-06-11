@@ -27,7 +27,6 @@ namespace SimuladoMurex.Infra.Data.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
         {
-            dbContextOptionsBuilder.UseMySql("server=127.0.0.1;user id=root;database=simuladomurex");
         }
     }
 }

@@ -2,12 +2,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SimuladoMurex.Infra.Data.Context;
+using SimuladoMurex.Infra.IoC;
 
 namespace SimuladoMurex.WebApi
 {
@@ -23,22 +25,15 @@ namespace SimuladoMurex.WebApi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-            var connectionString = Configuration.GetConnectionString("MySqlConnection");
-            services.AddDbContext<SimuladoMurexContext>(option =>
-                                                               option.UseLazyLoadingProxies()
-                                                               .UseMySQL(connectionString,
-                                                                                m => m.MigrationsAssembly("SimuladoMurex.Infra.Data")));
-
-            services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "ClientApp/dist";
+            services.AddRazorPages();
+            services.AddCors(options => {
+                options.AddPolicy("AllowMyOrigin",
+                    builder => builder.WithOrigins("http://localhost:4200"));
             });
+
+            DependencyInjectConfig.Register(services, Configuration);    
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,38 +46,25 @@ namespace SimuladoMurex.WebApi
             else
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            if (!env.IsDevelopment())
-            {
-                app.UseSpaStaticFiles();
-            }
-
             app.UseRouting();
+            app.UseAuthorization();
+            app.UseCors("AllowMyOrigin");
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapControllers();
             });
 
-            app.UseSpa(spa =>
+            app.Run(async (context) =>
             {
-                // To learn more about options for serving an Angular SPA from ASP.NET Core,
-                // see https://go.microsoft.com/fwlink/?linkid=864501
-
-                spa.Options.SourcePath = "ClientApp";
-
-                if (env.IsDevelopment())
-                {
-                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
-                }
+                await context.Response.WriteAsync("Hello world");
             });
+
         }
     }
 }

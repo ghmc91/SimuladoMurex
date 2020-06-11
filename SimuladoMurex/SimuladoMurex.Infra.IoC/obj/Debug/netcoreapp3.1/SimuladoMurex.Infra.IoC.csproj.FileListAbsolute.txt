@@ -1,0 +1,16 @@
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\bin\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.deps.json
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\bin\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.dll
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\obj\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.csprojAssemblyReference.cache
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\obj\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.AssemblyInfoInputs.cache
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\obj\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.AssemblyInfo.cs
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\bin\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.pdb
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\bin\Debug\netcoreapp3.1\SimuladoMurex.Application.dll
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\bin\Debug\netcoreapp3.1\SimuladoMurex.Domain.dll
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\bin\Debug\netcoreapp3.1\SimuladoMurex.Infra.Data.dll
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\bin\Debug\netcoreapp3.1\SimuladoMurex.Application.pdb
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\bin\Debug\netcoreapp3.1\SimuladoMurex.Infra.Data.pdb
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\bin\Debug\netcoreapp3.1\SimuladoMurex.Domain.pdb
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\obj\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.csproj.CoreCompileInputs.cache
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\obj\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.csproj.CopyComplete
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\obj\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.dll
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Infra.IoC\obj\Debug\netcoreapp3.1\SimuladoMurex.Infra.IoC.pdb

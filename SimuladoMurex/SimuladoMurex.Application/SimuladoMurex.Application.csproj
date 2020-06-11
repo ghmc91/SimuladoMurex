@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SimuladoMurex.Domain\SimuladoMurex.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
