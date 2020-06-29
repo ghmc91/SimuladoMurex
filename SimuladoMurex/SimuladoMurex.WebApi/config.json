@@ -1,6 +1,7 @@
 {
   "ConnectionStrings": {
-    "MySqlConnection": "server=127.0.0.1;user id=root;database=simuladomurex"
+    "MySqlConnection": "server=127.0.0.1;user id=root;database=simuladomurex",
+    "CustomerConnection": "server=127.0.0.1;user id=root;database=customers"
   }
 }
 

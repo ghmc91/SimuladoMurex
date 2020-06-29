@@ -6,9 +6,6 @@ using SimuladoMurex.Domain.Interfaces.Repositories;
 using SimuladoMurex.Domain.Interfaces.Services;
 using SimuladoMurex.Infra.Data.Context;
 using SimuladoMurex.Infra.Data.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SimuladoMurex.Infra.IoC
 {
@@ -20,8 +17,13 @@ namespace SimuladoMurex.Infra.IoC
                                                                .UseMySql("server=127.0.0.1;user id=root;pwd=raca1981;database=simuladomurex",
                                                                                 m => m.MigrationsAssembly("SimuladoMurex.Infra.Data")));
 
+            services.AddDbContext<CustomersContext>(option => option
+                                                               .UseMySql("server=127.0.0.1;user id=root;pwd=raca1981;database=simuladomurex",
+                                                                                m => m.MigrationsAssembly("SimuladoMurex.Infra.Data")));
+
             services.AddScoped<IMoRepository, MoRepository>();
             services.AddTransient<IOperationsService, OperationsService>();
+            services.AddScoped<ICustomersRepository, CustomersRepository>();
 
             services.BuildServiceProvider();
 

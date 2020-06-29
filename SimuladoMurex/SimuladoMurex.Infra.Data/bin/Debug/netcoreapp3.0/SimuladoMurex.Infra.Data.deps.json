@@ -1078,6 +1078,9 @@
         }
       },
       "SimuladoMurex.Domain/1.0.0": {
+        "dependencies": {
+          "System.Linq.Expressions": "4.3.0"
+        },
         "runtime": {
           "SimuladoMurex.Domain.dll": {}
         }

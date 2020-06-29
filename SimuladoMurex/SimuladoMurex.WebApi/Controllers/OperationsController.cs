@@ -31,5 +31,12 @@ namespace SimuladoMurex.WebApi.Controllers
                 return BadRequest(e.ToString());
             }
         }
+
+        [Route("customers")]
+        public IActionResult GetCustomers()
+        {
+            var result = _operationsService.Get();
+            return Ok(result);
+        }
     }
 }

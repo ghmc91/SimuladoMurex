@@ -1,3 +1,28 @@
+<div class="jumbotrom no-margin">
+  <div class="container-fluid text-sm-center text-md-left">
+    <div class="inner" pg-paralax>
+      <h4>Simulado</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="table table-responsive mt-0">
+    <div class="bg-white table-responsive collapse-border">
+      <ngx-datatable class="table mt-0 table-hover table-stripped expandable" *ngFor="let item of data"
+                    [columnMode]="'flex'"
+                    [rowHeight]="'35'"
+                    [rows]="item">
+        <ngx-datatable-column *ngFor="let i of item" flexGrow=5 name="Contraparte" prop="i.counterparty">
+          <ng-template let-value="value" ngx-datatable-cell-template>
+            {{value}}
+          </ng-template>
+        </ngx-datatable-column>            
+      </ngx-datatable>
+    </div>
+  </div>
+</div>
+
 <div *ngFor="let item of data">
-  <div>{{item.counterparty}}</div>
+  <div *ngFor="let i of item"> {{i.counterparty}}</div>
 </div>

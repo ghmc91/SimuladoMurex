@@ -2,8 +2,8 @@ D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\bin\Debug\netcoreapp3.0\Simu
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\bin\Debug\netcoreapp3.0\SimuladoMurex.Domain.dll
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\bin\Debug\netcoreapp3.0\SimuladoMurex.Domain.pdb
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\obj\Debug\netcoreapp3.0\SimuladoMurex.Domain.csprojAssemblyReference.cache
-D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\obj\Debug\netcoreapp3.0\SimuladoMurex.Domain.csproj.CoreCompileInputs.cache
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\obj\Debug\netcoreapp3.0\SimuladoMurex.Domain.AssemblyInfoInputs.cache
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\obj\Debug\netcoreapp3.0\SimuladoMurex.Domain.AssemblyInfo.cs
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\obj\Debug\netcoreapp3.0\SimuladoMurex.Domain.dll
 D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\obj\Debug\netcoreapp3.0\SimuladoMurex.Domain.pdb
+D:\SimuladoMurex\SimuladoMurex\SimuladoMurex.Domain\obj\Debug\netcoreapp3.0\SimuladoMurex.Domain.csproj.CoreCompileInputs.cache

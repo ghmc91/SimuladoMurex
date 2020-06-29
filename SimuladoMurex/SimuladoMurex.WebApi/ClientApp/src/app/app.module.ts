@@ -24,7 +24,7 @@ import { OperationsComponent } from './operations/operations/operations.componen
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'api/operations', component: OperationsComponent }
+      { path: 'api/operations', component: OperationsComponent}
     ])
   ],
   providers: [],

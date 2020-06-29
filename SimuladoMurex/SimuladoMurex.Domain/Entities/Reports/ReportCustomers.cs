@@ -7,19 +7,30 @@ namespace SimuladoMurex.Domain.Entities.Reports
 {
     public class ReportCustomers
     {
-        public string Counterparty { get; set; }
         public DateTime TradeDate { get; set; }
         public string Isin { get; set; }
-        public int Typology { get; set; }
+        public int Typology { get; set; 
+        }
+        
+    }
 
-        public IEnumerable<ReportCustomers> LoadData(IEnumerable<Mo> data)
+    public class ReportCustomerKey
+    {
+        public string Counterparty { get; set; }
+        public IEnumerable<ReportCustomers> rc { get; set; }
+
+        public IEnumerable<ReportCustomerKey> LoadData(IEnumerable<Mo> data)
         {
-            return data.Select(x => new ReportCustomers
-            {
-                Counterparty = x.Counterparty,
-                TradeDate = x.TradeDate,
-                Isin = x.Ir.Isin
-            });
+            return data.GroupBy(x => x.Counterparty)
+                       .Select(x => new ReportCustomerKey
+                       {
+                           Counterparty = x.Key,
+                           rc = x.Select(i => new ReportCustomers
+                           {
+                               TradeDate = i.TradeDate,
+                               Isin = i.Ir.Isin
+                           }).ToList()
+                       });
         }
     }
 }
