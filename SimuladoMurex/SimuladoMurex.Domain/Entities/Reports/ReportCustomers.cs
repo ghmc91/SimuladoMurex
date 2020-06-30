@@ -9,14 +9,15 @@ namespace SimuladoMurex.Domain.Entities.Reports
     {
         public DateTime TradeDate { get; set; }
         public string Isin { get; set; }
-        public int Typology { get; set; 
-        }
-        
+        public int Typology { get; set; }
+        public string Email { get; set; }
+
     }
 
     public class ReportCustomerKey
     {
         public string Counterparty { get; set; }
+        public string Email { get; set; }
         public IEnumerable<ReportCustomers> rc { get; set; }
 
         public IEnumerable<ReportCustomerKey> LoadData(IEnumerable<Mo> data)
@@ -25,6 +26,7 @@ namespace SimuladoMurex.Domain.Entities.Reports
                        .Select(x => new ReportCustomerKey
                        {
                            Counterparty = x.Key,
+                           Email = x.Key,
                            rc = x.Select(i => new ReportCustomers
                            {
                                TradeDate = i.TradeDate,

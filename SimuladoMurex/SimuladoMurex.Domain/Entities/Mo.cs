@@ -8,7 +8,7 @@ namespace SimuladoMurex.Domain.Entities
     {
         public int MoId { get; set; }
         public DateTime TradeDate { get; set; }
-        public string Counterparty { get; set; }     
+        public string Counterparty { get; set; }
 
         public Ir Ir { get; set; }
 

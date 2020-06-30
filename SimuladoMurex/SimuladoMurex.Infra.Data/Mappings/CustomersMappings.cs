@@ -13,6 +13,9 @@ namespace SimuladoMurex.Infra.Data.Mappings
         {
             builder
                 .HasKey(x => new { x.Customer, x.Email });
+
+            builder.Property(x => x.Customer)
+                   .HasColumnName("Customers");
         }
     }
 }

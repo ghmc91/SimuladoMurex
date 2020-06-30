@@ -18,12 +18,13 @@ namespace SimuladoMurex.Infra.IoC
                                                                                 m => m.MigrationsAssembly("SimuladoMurex.Infra.Data")));
 
             services.AddDbContext<CustomersContext>(option => option
-                                                               .UseMySql("server=127.0.0.1;user id=root;pwd=raca1981;database=simuladomurex",
+                                                               .UseMySql("server=127.0.0.1;user id=root;pwd=raca1981;database=customers",
                                                                                 m => m.MigrationsAssembly("SimuladoMurex.Infra.Data")));
 
             services.AddScoped<IMoRepository, MoRepository>();
-            services.AddTransient<IOperationsService, OperationsService>();
+
             services.AddScoped<ICustomersRepository, CustomersRepository>();
+            services.AddTransient<IOperationsService, OperationsService>();
 
             services.BuildServiceProvider();
 
