@@ -22,6 +22,7 @@ namespace SimuladoMurex.Domain.Entities.Reports
 
         public IEnumerable<ReportCustomerKey> LoadData(IEnumerable<Mo> data)
         {
+            
             return data.GroupBy(x => x.Counterparty)
                        .Select(x => new ReportCustomerKey
                        {

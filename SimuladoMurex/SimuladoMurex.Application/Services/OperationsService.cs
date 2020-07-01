@@ -24,26 +24,24 @@ namespace SimuladoMurex.Application.Services
         public IEnumerable<ReportCustomerKey> GetOperations()
         {
             var reports = new ReportCustomerKey();
-            var customers = new Customers();
-
+            
             var reportsCounterparties = reports.LoadData(_moRepository.Get(x => !string.IsNullOrEmpty(x.Counterparty), i => i.Ir));
-            var customersData = customers.LoadData(_customerRepository.Get(x => !string.IsNullOrEmpty(x.Customer)));
+            var customers = GetCustomers();
 
-            reportsCounterparties.ToList().ForEach(x =>
-            {
-                customersData.ToList().ForEach(i =>
+            var reportJoinCustomer = reportsCounterparties.Join(customers,
+                rc => rc.Counterparty,
+                c => c.Customer,
+                (rc, c) => new ReportCustomerKey
                 {
-                    if (x.Counterparty == i.Customer)
-                    {
-                        x.Email = i.Email;
-                    }
+                    Counterparty = rc.Counterparty,
+                    Email = c.Email,
+                    rc = rc.rc
                 });
-            });
 
-            return reportsCounterparties;
+            return reportJoinCustomer;
         }
 
-        public IEnumerable<Customers> Get()
+        public IEnumerable<Customers> GetCustomers()
         {
             var customers = new Customers();
 

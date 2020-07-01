@@ -35,7 +35,7 @@ namespace SimuladoMurex.WebApi.Controllers
         [HttpGet("customers")]
         public IActionResult GetCustomers()
         {
-            var result = _operationsService.Get();
+            var result = _operationsService.GetCustomers();
             return Ok(result);
         }
     }

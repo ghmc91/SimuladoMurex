@@ -9,6 +9,6 @@ namespace SimuladoMurex.Domain.Interfaces.Services
     public interface IOperationsService
     {
         IEnumerable<ReportCustomerKey> GetOperations();
-        IEnumerable<Customers> Get();
+        IEnumerable<Customers> GetCustomers();
     }
 }
